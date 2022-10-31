@@ -11325,3 +11325,12 @@ h2{
 p, h3{
   color: #213E1D;
 }
+
+bg-light{
+  background-color: #DEC090 !important;
+}
+
+.inner-card{
+  background-color: #DEC090;
+  border-radius: 10px;
+}
