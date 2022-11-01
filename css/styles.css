@@ -11311,7 +11311,6 @@ header div{
 video {
   display: block;
   width: 100%;
-  margin-top: 56px;
 }
 
 .navbar-brand img {
@@ -11322,7 +11321,7 @@ h2{
   color: #987937;
 }
 
-p, h3{
+p, h3, footer a{
   color: #213E1D;
 }
 
@@ -11333,4 +11332,38 @@ bg-light{
 .inner-card{
   background-color: #DEC090;
   border-radius: 10px;
+  min-height: 408px;
+}
+
+.icon{
+  width: 30px ;
+}
+
+.icon[alt="facebook"]{  
+  filter: invert(32%) sepia(99%) saturate(3939%) hue-rotate(197deg) brightness(100%) contrast(95%);
+}
+
+#icons{
+  flex-grow: 100;
+  gap: 8px;
+}
+
+#icons span{
+  align-self: center;
+}
+
+section{
+  padding-top: 5rem;
+}
+
+footer{
+  background-color: #DEC090;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #baeaff;
 }

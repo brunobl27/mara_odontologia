@@ -7,24 +7,36 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <title>Mara Odontologia</title>
-  <link rel="icon" type="image/x-icon" href="assets/LOGO_MARA.png" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/08ecac92a3.js" crossorigin="anonymous"></script>
 </head>
 
 <body id="page-top">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow" id="mainNav">
     <div class="container-fluid px-4">
       <a class="navbar-brand" href="#page-top">
         <img src="assets/LOGO_MARA.png" alt="">
       </a>
+      <div id="icons" class="d-flex justify-content-end">
+        <span>
+          (12) 2101-3285
+        </span>
+        <a href="https://www.facebook.com/profile.php?id=100086331860151" target="_blank">
+          <img class='icon' src="img/facebook.svg" alt="facebook">
+        </a>
+        <a href="https://www.instagram.com/odontologiamara/" target="_blank">
+          <img class='icon' src="img/instagram.png" alt="instagram">
+        </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
           class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Quem Somos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Especialida">Especialida</a></li>
+          <li class="nav-item"><a class="nav-link" href="#especialidades">Especialidades</a></li>
           <li class="nav-item"><a class="nav-link" href="#historia">História</a></li>
           <li class="nav-item"><a class="nav-link" href="#mara">Mara Odontologia</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
@@ -35,7 +47,7 @@
 
   <header class="bg-primary bg-gradient text-white">
     <div class="container-fluid">
-      <video src="video/placeholder.mp4" autoplay loop>
+      <video src="video/VÍDEO_MARA.mp4" autoplay loop muted>
       </video>
     </div>
   </header>
@@ -66,7 +78,6 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -90,9 +101,6 @@
               <div class="carousel-item">
                 <img src="img/mara-odonto-sala-6.png" class="d-block w-100" alt="mara-odonto-sala-6">
               </div>
-              <div class="carousel-item">
-                <img src="img/mara-odonto-sala.png" class="d-block w-100" alt="mara-odonto-sala">
-              </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -109,9 +117,9 @@
 
   </section>
 
-  <section class="bg-light" id="Especialida">
+  <section class="bg-light" id="especialidades">
     <div class="container px-4">
-      <h2 class="text-center mb-4">Especialidas</h2>
+      <h2 class="text-center mb-4">Especialidades</h2>
       <div class="row g-4">
         <div class="col-lg-3">
 
@@ -138,7 +146,7 @@
         <div class="col-lg-3">
 
           <div class="card">
-            <img src="img/mara-odonto-recepcao-1.png" class="card-img-top" alt="mara-odonto-recepcao-1">
+            <img src="img/ortodontia.png" class="card-img-top" alt="ortodontia">
             <div class="card-body">
               <h5 class="card-title text-center">Ortodontia</h5>
             </div>
@@ -171,7 +179,7 @@
         <div class="col-lg-3">
 
           <div class="card">
-            <img src="img/implantes-mara-odonto.png" class="card-img-top" alt="implantes-mara-odonto">
+            <img src="img/protese.png" class="card-img-top" alt="protese">
             <div class="card-body">
               <h5 class="card-title text-center">Próteses</h5>
             </div>
@@ -245,7 +253,7 @@
         </div>
 
         <div class="col-lg-4">
-          <img src="img/FERNANDA VARELLA.png" alt="FERNANDA VARELLA" class="w-100">
+          <img src="img/mara-odonto-sala.png" alt="mara-odonto-sala" class="w-100">
         </div>
         <div class="col-lg-8">
           <p class="lead">
@@ -303,11 +311,11 @@
 
   <section class='bg-light' id="contato">
     <div class="container px-4">
-      <div class="row">
+      <div class="row justify-content-center">
         <div class="col-lg-6">
           <h2>Agende sua avaliação gratuita</h2>
 
-          <form action="">
+          <form method="post" action="email/email.php">
             <label class="form-label" for="nome">Nome:</label>
             <input class="form-control" type="text" name="nome" id="nome">
 
@@ -331,9 +339,26 @@
     </div>
   </section>
 
-  <footer class="py-5 bg-dark">
+  <footer class="py-5">
     <div class="container px-4">
-      <p class="m-0 text-center text-white">©2022. Todos os direitos reservados. B2B Agency</p>
+      <div class="row pb-3">
+        <div class="col-3">
+          <a class="navbar-brand" href="#page-top">
+            <img src="assets/LOGO_MARA.png" alt="">
+          </a>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-phone"></i> (12) 2101-3285<br>
+          <i class="fa fa-envelope"></i> contato@maraodontologia.com.br<br>
+          <i class="fa fa-map-marker"></i> Endereço - Rua São Benedito, 550, Caraguatatuba - SP, 11660-660
+        </div>
+      </div>
+      <p class="m-0 text-center">
+        ©2022. Todos os direitos reservados.
+        <a href="https://www.b2bagency.com.br/" target="_blank">
+          B2B Agency
+        </a>
+      </p>
     </div>
   </footer>
   <!-- Bootstrap core JS-->
