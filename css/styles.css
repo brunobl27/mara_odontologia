@@ -11371,3 +11371,13 @@ footer a:hover{
 video{
   margin-top: 56px; 
 }
+
+.lead{
+  text-align: justify;
+}
+
+/* .whatsapp{
+  position: fixed;
+  right: 7px;
+  bottom: 7px;
+} */
