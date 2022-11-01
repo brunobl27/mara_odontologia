@@ -11381,3 +11381,9 @@ video{
   right: 7px;
   bottom: 7px;
 }
+
+@media (max-width: 425px){
+  .navbar-brand img{
+    width: 27px;
+  }
+}
