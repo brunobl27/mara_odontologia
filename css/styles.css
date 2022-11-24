@@ -11380,6 +11380,7 @@ video{
   position: fixed;
   right: 7px;
   bottom: 7px;
+  z-index: 1;
 }
 
 @media (max-width: 430px){
